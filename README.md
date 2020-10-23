@@ -1,4 +1,3 @@
-# dev_tools
-Various useful development tools, explanations and sample code
+# Python libraries and frameworks
 
-[SOME STUFF MOVED TO AWS-repo]
+---

@@ -1,5 +1,7 @@
 # How to pydantic
 
+WIP - use references to file
+
 ## The purpose
 ...
 
@@ -13,3 +15,6 @@ See file.....
 
 ## Useful links
 [pydantic-docs](https://pydantic-docs.helpmanual.io/)  
+
+
+

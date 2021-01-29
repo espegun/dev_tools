@@ -1,15 +1,13 @@
 # How to pydantic
 
-WIP - use references to file
-
 ## The purpose
-...
+Secure that objects are initiated correctly with correctly formatted parameters.
 
 ## How does it work?
 ...
 
 ## Useful commands
-See file.....
+See the content of the attached file.  
 `...`  ....  
 `...`  ....  
 

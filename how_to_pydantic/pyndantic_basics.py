@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from pydantic.error_wrappers import ValidationError
 from typing import List, Dict, Optional
 
 
@@ -14,24 +15,32 @@ class Band(BaseModel):
     manager: Optional[str] = "Danny"
 
 
+p0 = Person(name="Johnny", plays="Guitar")
+p1 = Person(name="Joey", plays="Vocals")
+p2 = Person(name="Dee Dee", plays="Bass")
+p3 = Person(**{"name": "Tommy", "plays": "Drums"})
 
-init_data = {
+try:
+    init_person1 = {"name": "Elvis", "playz": "Drums"}
+    Person(**init_person1)
+except ValidationError:
+    print(f"Oh no! Could not initiate a Person object from {init_person1}")
+
+init_person2 = {"name": "Elvis", "plays": 1.234}
+print(Person(**init_person2))  # This works - plays become a string through unseen str(float)
+
+init_band1 = {
     "name": "Ramones",
-    "members": [Person(name="Johnny", plays="Guitar"),
-                Person(**{"name": "Joey", "plays": "Vocals"}),
-                Person(**{"name": "Dee Dee", "plays": "Bass"}),
-                Person(**{"name": "Tommy", "plays": "Drums"})]
+    "members": [p0, p1, p2, p3, "Elvis"]
 }
+try:
+    band1 = Band(**init_band1)
+except ValidationError as e:
+    print(f"Oh no! Could not initiate a Band object from {init_band1}:\n{str(e)}")
 
-init_data = {
-    "members": [Person(name="Johnny", plays="Guitar"),
-                Person(**{"name": "Joey", "plays": "Vocals"}),
-                Person(**{"name": "Dee Dee", "plays": "Bass"}),
-                Person(**{"name": "Tommy", "plays": "Drums"})]
+init_band2 = {
+    "name": "Ramones",
+    "members": [p0, p1, p2, p3]
 }
-
-print(init_data)
-band = Band(**init_data)
-print(band)
-
-print("WIP!")
+band2 = Band(**init_band2)
+print(band2)

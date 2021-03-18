@@ -26,7 +26,7 @@ Argumenter: `contours.dtype=np.int32, im.dtype=uint8(?), contours_list =[2d-arra
 `im = cv2.rectangle(im, (x1, y1), (x2, y2), col_tuple, thickness)`  
  
 ### Text
-[puttext method](https://www.geeksforgeeks.org/python-opencv-cv2-puttext-method/)
+[puttext method](https://www.geeksforgeeks.org/python-opencv-cv2-puttext-method/)  
 `cv2.putText(im, "text", (10, 50), font, 0.5, 255, 1)`  Coors LL corn of text  
 
 ### Contours (list of array.shape(x, 2), dtype int32, ikke uint8)

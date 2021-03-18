@@ -1,7 +1,12 @@
 # OpenCV Cheat Sheet
 
+### Installation
+`$ pip install opencv-python` (or add to requirements.txt)  
+`import cv2`  
+If in trouble, consider: `$ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module`
+
 ### Read, write and formats
-Images ARE simply np.arrays!
+Images *are* simply np.arrays.
 
 `im = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)` Alternatively `_COLOR`  
 `cv2.imwrite(filename, im)`  
@@ -10,7 +15,6 @@ Images ARE simply np.arrays!
 `ime = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)`  Converting colors  
 
 ### Transformations
-
 `im2 = cv2.resize(im, (width, height), interpolation=cv2.INTER_LINEAR)`  
 
 ### Draw simple stuff
@@ -18,7 +22,6 @@ Images ARE simply np.arrays!
 `im = cv2.line(im, (0,0), (511,511), (255,0,0), 5)` Thickness 5  
 `im = cv2.fillPoly(im, pts=contours_list, color=(255,255,255))`  
 Argumenter: `contours.dtype=np.int32, im.dtype=uint8(?), contours_list =[2d-arrays]`  
-
 `im = cv2.circle(im, (cx, cy), radius, col_tuple, thickness)`   
 `im = cv2.rectangle(im, (x1, y1), (x2, y2), col_tuple, thickness)`  
  

@@ -32,22 +32,22 @@ Argumenter: `contours.dtype=np.int32, im.dtype=uint8(?), contours_list =[2d-arra
 `area = cv2.contourArea(contour)`  may use to filter on size  
 https://docs.opencv.org/3.4/dd/d49/tutorial_py_contour_features.html
 https://docs.opencv.org/master/d1/d32/tutorial_py_contour_properties.html
-`im = cv2.drawContours(im, contours_list, -1, (0,255,0), -1)` -1 = all; fill
-`M = cv2.moments(cont)`  M["01"] er 1.moment sum(dist1) for akse 1 
-`M["m01"] / M["m10"]) == ratio`  Høyde/Bredde for rene rektangler
+`im = cv2.drawContours(im, contours_list, -1, (0,255,0), -1)` -1 = all; fill  
+`M = cv2.moments(cont)`  M["01"] er 1.moment sum(dist1) for akse 1  
+`M["m01"] / M["m10"]) == ratio`  Høyde/Bredde for rene rektangler  
 
 ### Maskering
-`im = np.where(mask==255, mask, im)`  mask color == 255. RGB is ok.
-`cv2.mean(im, mask)`  1st verdi ret. mask.dtype = np.uint8, bruk 0 og 255.
+`im = np.where(mask==255, mask, im)`  mask color == 255. RGB is ok.  
+`cv2.mean(im, mask)`  1st verdi ret. mask.dtype = np.uint8, bruk 0 og 255.  
 
 ### Filtere
 [Filter tutorial](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_filtering/py_filtering.html)  
-`kernel = np.ones((5,5),np.float32)/25; cv2.filter2D(img,-1,kernel)`
-`cv2.blur(im, (5,5))`  Mean. May expand to count filter by mono pxls. 
-`cv2.GaussianBlur(im, ksize_2dtuple, 0)` 0 calculates sigma in the kernel
-`cv2.Laplacian(im, ddepth=cv2.CV_16S, ksize=3)`
-`cv2.medianBlur(im, 5)`
-`cv2.bilateralFilter(im, 9, 75, 75)`
+`kernel = np.ones((5,5),np.float32)/25; cv2.filter2D(img,-1,kernel)`  
+`cv2.blur(im, (5,5))`  Mean. May expand to count filter by mono pxls.  
+`cv2.GaussianBlur(im, ksize_2dtuple, 0)` 0 calculates sigma in the kernel  
+`cv2.Laplacian(im, ddepth=cv2.CV_16S, ksize=3)`  
+`cv2.medianBlur(im, 5)`  
+`cv2.bilateralFilter(im, 9, 75, 75)`  
 
 ### Display images (put this in a  while True loop)
 `cv2.imshow("MyWindow", im)`  

@@ -34,7 +34,7 @@ Argumenter: `contours.dtype=np.int32, im.dtype=uint8(?), contours_list =[2d-arra
 `conts, _ = cv2.findContours(bin_im, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)`  
 `area = cv2.contourArea(contour)`  may use to filter on size  
 https://docs.opencv.org/3.4/dd/d49/tutorial_py_contour_features.html
-https://docs.opencv.org/master/d1/d32/tutorial_py_contour_properties.html
+https://docs.opencv.org/master/d1/d32/tutorial_py_contour_properties.html  
 `im = cv2.drawContours(im, contours_list, -1, (0,255,0), -1)` -1 = all; fill  
 `M = cv2.moments(cont)`  M["01"] er 1.moment sum(dist1) for akse 1  
 `M["m01"] / M["m10"]) == ratio`  Høyde/Bredde for rene rektangler  

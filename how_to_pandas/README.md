@@ -33,12 +33,12 @@ Groupby uses the same **split-apply-combine** grouping as in SQL.
 * **aggregate-function** - which function will be run on this. Typical examples are `count`, `min`, `max`, `mean`.
 
 
-**Fra Pandas**  
+**WIP Fra Pandas**  
 `df.groupby(by=["col1"]).agg({"col2": "sum", "col3": lambda arr: myfunc(arr)})`  
 `df = df.pivot_table(index=["id1", "id2"], columns="value_type_to_cols", values="Antall", aggfunc=np.sum, fill_value=0)` # Gen: Agg and reshape  
 `df.groupby(col_or_any_list).agg(["mean"])` # By col or any right length list  
 
-**Fra topp 10**
+**WIP Fra topp 10**  
 Split (into groups (Sers)) - apply (some function) - combine (to a data structure)  
 `df.groupby(by=["col1"], as_index=False).agg("sum")` or a custom function  
 `df.groupby(by=[df.index, "col1"]).agg({"col2": [np.min, np.size], "col3": cfunc})`  # Ser -> cfunc arg  

@@ -1,5 +1,7 @@
 # How to Pandas
 
+TBD: Flytt inn fra de andre arkene, både topp 10 og pandas generelt.
+
 ### Adjust output
 `pd.set_option("display.precision", 3)` Use 3 decimal places in output display.  
 `pd.set_option("display.expand_frame_repr", False)` Don't wrap repr(DataFrame) across additional lines.

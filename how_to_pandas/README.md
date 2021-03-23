@@ -12,7 +12,7 @@ TBD: Flytt inn fra de andre arkene, både topp 10 og pandas generelt.
 
 
 
-### GroupBy
+### DateFrame.GroupBy
 [GroupBy tutorial](https://realpython.com/pandas-groupby/)  
 
 WIP - The Zen of Groupby:  
@@ -45,6 +45,9 @@ Split (into groups (Sers)) - apply (some function) - combine (to a data structur
 `df = df.pivot_table(index=["col1"], columns="Categories_as_Headers", values="Antall", aggfunc=np.sum, fill_value=0)` # Cat data as headers, aggr.  
 
 Se the official documentation for [groupby](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html?highlight=groupby#pandas.DataFrame.groupby)
+
+## vs DataFrame.pivot_table
+df = df.pivot_table(index=["id1", "id2"], columns="value_type_to_cols", values="Antall", aggfunc=np.sum, fill_value=0) # Gen: Agg and reshape
 
 
 ## Time

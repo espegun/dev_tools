@@ -22,7 +22,7 @@ Groupby uses the same **split-apply-combine** grouping as in SQL.
 **combine**: Combine the aggregated bags into one table.
 
 
-**df.groupby(by_whats)[columns_to_aggregate].aggregate_function()**
+**df.groupby(by_what)[columns_to_aggregate].aggregate_function()**
 * **by_what** - The crucial `by` argument and others.
   * `by` - The first argument, group by *what*?
     * Alt 1: Single `str` or `list` of `str` specifying *which columns* to group by.

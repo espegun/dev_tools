@@ -15,9 +15,7 @@ TBD: Flytt inn fra de andre arkene, både topp 10 og pandas generelt.
 ### GroupBy
 [GroupBy tutorial](https://realpython.com/pandas-groupby/)  
 
-
-
-The Zen of Groupby:
+WIP - The Zen of Groupby:  
 Groupby uses the same **split-apply-combine** grouping as in SQL.   
 **split**: Split the data into distinct bags based on some criteria. 
 **apply**: Apply an aggregate function (like `sum` or `min`) to each bag. 

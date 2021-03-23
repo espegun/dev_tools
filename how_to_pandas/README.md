@@ -52,5 +52,13 @@ df = df.pivot_table(index=["id1", "id2"], columns="value_type_to_cols", values="
 
 ## Time
 
+`df.index=df.index.round("30min")`
+```
+pi = pd.period_range(start=datetime.datetime(year=2019, month=12, day=1), 
+                      end=datetime.datetime(year=2020, month=3, day=10),
+                      freq="30min")
+```
+
+
 ### resampling TBD
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html#pandas.DataFrame.resample

@@ -7,7 +7,10 @@
 ...  
 
 ## Useful commands
+Setup according to the description in [RPA_Python repo](https://github.com/tebelorg/RPA-Python). Note that the Linux require OpenCV and Tesseract as well.
+
+
 `...`  ....  
 
 ## Useful links
-[RPA_Python repo](https://github.com/tebelorg/RPA-Python)  
+

@@ -1,4 +1,4 @@
-# How to <SOMETHING>
+# How to RPA
 
 ## The purpose
 ...  
@@ -10,5 +10,4 @@
 `...`  ....  
 
 ## Useful links
-[Description](https://www.cisco.com)  
-
+[RPA_Python repo](https://github.com/tebelorg/RPA-Python)  

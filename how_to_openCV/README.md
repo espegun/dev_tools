@@ -5,6 +5,9 @@
 `import cv2`  
 If in trouble, consider: `$ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module`
 
+### Initialize random images
+`im = np.random.randint(255, size=(110, 1227, 3), dtype=np.uint8)` (heigth, width, depth)  
+
 ### Read, write and formats
 Images *are* simply np.arrays.
 
@@ -54,6 +57,6 @@ https://docs.opencv.org/master/d1/d32/tutorial_py_contour_properties.html
 
 ### Display images (put this in a  while True loop)
 `cv2.imshow("MyWindow", im)`  
-`k = cv2.waitKey(ms)`  
+`k = cv2.waitKey(ms)` Possibly ms=`0` if just waiting for a key to be pressed.  
 `if k % 256 == num:` 27=Esc, 32=Space, 49-57=1-9, use `print(k % 256) to check.  
 `cv2.destroyAllWindows()`  When having left the loop  

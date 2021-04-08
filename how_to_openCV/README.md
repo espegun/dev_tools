@@ -14,6 +14,8 @@ Images *are* simply np.arrays.
 `im = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)` Alternatively `_COLOR`  
 `cv2.imwrite(filename, im)`  
 
+[Grab video from the camera - easy!!](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html)  
+
 ### Convert between formats
 `ime = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)`  Converting colors  
 

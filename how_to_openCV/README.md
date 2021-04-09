@@ -1,4 +1,6 @@
-# OpenCV Cheat Sheet
+# OpenCV
+
+[Official tutorial](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)  
 
 ### Installation
 `$ pip install opencv-python` (or add to requirements.txt)  

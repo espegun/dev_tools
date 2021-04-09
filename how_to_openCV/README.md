@@ -1,4 +1,4 @@
-# OpenCV
+# OpenCV (for Python3)
 
 [Official tutorial](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)  
 

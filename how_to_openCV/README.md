@@ -59,6 +59,6 @@ https://docs.opencv.org/master/d1/d32/tutorial_py_contour_properties.html
 
 ### Display images (put this in a  while True loop)
 `cv2.imshow("MyWindow", im)`  
-`k = cv2.waitKey(ms)` Possibly ms=`0` if just waiting for a key to be pressed.  
+`k = cv2.waitKey(ms)` `ms`is the number of milliseonds *or* if `0`, wait until a key is pressed.  
 `if k % 256 == num:` 27=Esc, 32=Space, 49-57=1-9, use `print(k % 256) to check.  
 `cv2.destroyAllWindows()`  When having left the loop  

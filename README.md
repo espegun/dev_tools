@@ -7,10 +7,7 @@ TBD: [Excel for Python](http://www.python-excel.org/) Spesielt openpyxl er inter
 TBD: statsmodels - kopier fra Dropbox også.
 TBD: [Matplotlib and Seaborn](https://link.medium.com/8jmAGT8iRfb)  
 TBD: [PostgresSQL for Python](https://www.postgresqltutorial.com/postgresql-python/)  
-
-
-
-
+TBD: [Luigi](https://luigi.readthedocs.io/en/stable/)  
 
 Wordcloud - just for fun
 https://python.plainenglish.io/how-to-create-word-clouds-in-python-8a19bd8ad075

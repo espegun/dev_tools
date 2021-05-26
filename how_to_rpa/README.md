@@ -16,7 +16,7 @@ Se examples (using the full rpaframework).
 [Selenium and Chrome on an EC2 instance](https://praneeth-kandula.medium.com/running-python-scripts-on-an-aws-ec2-instance-8c01f9ee7b2f)  
 `$ sudo yum install libX11` You may also have to install this if the chromedriver version can't be found.  
 
-What to do on the EC2 instance (when logged in through SSH and having python and pip runnning, see [here](https://github.com/espegun/AWS/tree/main/how_to_EC2)).
+What to do on the EC2 instance (when logged in through SSH after having python and pip runnning, see [here](https://github.com/espegun/AWS/tree/main/how_to_EC2)).
 ```
 cd /tmp/
 wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip

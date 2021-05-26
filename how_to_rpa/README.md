@@ -7,7 +7,7 @@ An (unexplored) alternative is UiPath.
 ## How does it work?
 
 ## Useful commands
-You may install the entire rpaframework or just Selenium (browser automation). Selenium is mostly meant for testing, but can be used for any browser automation.
+You may install the entire rpaframework or just Selenium (browser automation). Selenium is mostly meant for testing, but can be used for any browser automation.  
 `$ pip install rpaframework`  
 `$ pip install selenium`  
 Se examples (using the full rpaframework).
